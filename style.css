@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif&family=Roboto+Mono&display=swap');
+
+body {
+    background-color: #0D1730;
+}
+
+h1,h2,h3 {
+    color: #D47941;
+    text-shadow: #F7F4F3;
+    font-family: 'Ancizar Serif'; 
+}
+
+p {
+    color:#F7F4F3;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    font-size: 10pt;
+}
+
+a {
+    color: #EF3054;
+    text-decoration: none;
+}
+
+.nav
+{
+    box-sizing: border-box;
+    background-color: #D47941;
+    color: #FFFFFF;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1rem;
+}
+
+.nav ul
+{
+    padding: 0rem;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a
+{
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: .60rem;
+}
+
+.nav li {
+    font-size: 14pt;
+}
+
+.nav li.active {
+    background-color: #D47941;
+    border-radius: 8px;
+}
+
+.nav li:hover {
+    background-color: #4F1C51;
+    border-radius: 8px;
+}
+
+.Title {
+    font-weight:10;
+    color: #D47941;
+    text-shadow: #F7F4F3;
+    font-family: 'Ancizar Serif';
+    font-size: 24pt;
+    margin: 16px;
+    padding: 0px;
+    line-height: 10px;
+}
+
+.panel {
+    
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #D47941;
+    border-width: 5px;
+    background-color: #090F20;
+
+    width: 800px;
+    margin: auto;
+    margin-top: 3rem;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.intro {
+    margin: 30px;
+}
