@@ -1,0 +1,143 @@
+/* styles.css */
+
+/* 1. Color Palette */
+:root {
+  /* Core tones */
+  --color-cream:      #fdfdf9;
+  --color-pumpkin:    #d35400;
+  --color-mustard:    #f1c40f;
+  --color-forest:     #145a32;
+  --color-maroon:     #7b241c;
+  --color-olive:      #8e7e66;
+  --color-text-dark:  #2c3e50;
+  --color-text-light: #f4f4f4;
+
+  /* Spacing */
+  --spacer: 1rem;
+  --max-width: 1200px;
+
+  /* Typography */
+  --font-sans: 'Source Sans Pro', sans-serif;
+  --font-serif: 'Merriweather', serif;
+}
+
+/* 2. Global Reset & Base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* 1rem = 16px */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-text-dark);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: var(--spacer);
+}
+
+/* 3. Typography */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-serif);
+  color: var(--color-forest);
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* 4. Layout Components */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacer) 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-cream);
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--spacer);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-forest);
+  padding: 0.5em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-pumpkin);
+}
+
+/* 5. Buttons */
+.btn {
+  display: inline-block;
+  background-color: var(--color-pumpkin);
+  color: var(--color-text-light);
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-maroon);
+}
+
+/* 6. Sections & Cards */
+section {
+  margin: calc(var(--spacer) * 2) 0;
+}
+
+.card {
+  background-color: var(--color-olive);
+  color: var(--color-text-light);
+  padding: var(--spacer);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* 7. Footer */
+footer {
+  text-align: center;
+  padding: var(--spacer) 0;
+  font-size: 0.9rem;
+  color: var(--color-text-dark);
+  border-top: 1px solid var(--color-olive);
+}
+
+/* 8. Responsive Utilities */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: var(--spacer);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
