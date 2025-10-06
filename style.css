@@ -28,7 +28,7 @@ p {
     color: var(--light);
     font-family: 'Roboto Mono', monospace;
     font-size: 10pt;
-    margin: 0 0 1em;
+    margin: 0 0 1rem;
     line-height: 1.8;
 }
 
@@ -36,6 +36,26 @@ a {
     color: var(--red);
     text-decoration: none;
     padding: 0 2px;
+}
+
+ul {
+  color: var(--light);
+  align-items:normal;
+  margin: 0 0 1rem;
+  line-height: 1.8;
+  padding: 0 2px
+}
+
+pre {
+  color: var(--light);
+  align-items:normal;
+  margin: 0 0 1rem;
+  line-height: 1.8;
+  padding: 0 2px;
+}
+
+.demo{
+  align-items: center;
 }
 
 .nav {
@@ -150,7 +170,7 @@ a {
 }
 
 .projects ul li {
-  flex: 1 1 calc(33.333% - 1rem);
+  flex: 1 1 calc(25% - 1rem);
 }
 
 .projects ul li a {
